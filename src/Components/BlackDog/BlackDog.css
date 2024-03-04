@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.BlackDog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F3F3F3;
+}
+
+.BlackDog-Left {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.BlackDog-Left-Text {
+    padding: 0 20%;
+}
+
+.BlackDog-Left-Text h1 {
+    font-size: 2.25rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+.BlackDog-Left-Text h3 {
+    font-size: 1.25rem;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 12px auto 0 0;
+    font-family: Roboto, sans-serif;
+}
+
+.BlackDog-Left-Text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 28px 0 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.BlackDog-Left-Text button {
+    width: 270px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin: 28px auto 0 0;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: inherit;
+    border: 0;
+}
+
+.BlackDog-Left-Text button:hover{
+    background-color: gray;
+}
+
+
+.BlackDog-Right img {
+    width: 600px;
+    height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .BlackDog-Right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .BlackDog-Left {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    .BlackDog-Left-Text button{
+        width: 230px;
+    }
+}

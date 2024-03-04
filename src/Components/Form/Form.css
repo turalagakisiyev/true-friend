@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.Form {
+
+    padding-top: 5%;
+    background-color: #BFDBE9;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Form-Left {
+    min-width: 40%;
+    height: auto;
+}
+
+.Form-Left img {
+    min-width: 100%;
+    height: auto;
+    height: auto;
+
+}
+
+.Form-Right {
+    padding: 0 10%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+}
+
+.Form-Right h1 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif !important;
+    line-height: 1.1;
+}
+
+.Form-Right p {
+    max-width: 500px;
+    font-family: Roboto, sans-serif;
+    padding: 30px 0;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.Form-Right input {
+    padding: 10px 12px;
+    width: 100%;
+}
+
+.Form-Right label {
+    display: flex;
+}
+
+.Form-Right button {
+    padding: 10px 30px;
+    border-radius: 0;
+    background-color: black;
+    color: white;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    outline: none;
+    transition: all .35s;
+}
+
+.Form-Right button:hover {
+    background-color: rgb(32, 71, 147);
+
+}
+
+.Form-Right button:disabled {
+    background-color: rgb(84, 84, 84);
+}
+
+.Form-Thanks {
+
+    max-width: 450px;
+    height: 220px;
+    background-image: linear-gradient(to bottom right, rgb(32, 71, 147), rgb(105, 148, 235));
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', serif !important;
+    line-height: 1.1;
+    font-size: 35px;
+    margin: 40px 0;
+    padding: 30px;
+    text-align: center;
+    animation: appear 350ms ease-in 1;
+    border-radius: 4px;
+
+}
+
+.Form-Thanks b {
+
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.Form-Thanks i {
+    color: rgb(255, 255, 255);
+}
+
+.Form-Thanks i:hover {
+    cursor: pointer;
+    color: rgb(3, 48, 139);
+}
+
+.Form-Thanks-333 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .Form {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Form-Right h1 {
+        font-size: 1.75rem;
+        margin-top: 30px;
+    }
+
+    .Form-Right label {
+        margin-bottom: 50px;
+    }
+
+    .Form-Thanks {
+        padding: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .Form-Thanks img {
+        display: none;
+    }
+
+    .Form-Thanks-333 {
+        padding: 30px;
+    }
+}

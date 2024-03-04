@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7FBFE;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    z-index: 1;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+.Navbar-Menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.Navbar-Menu li {
+    padding: 0 10px;
+    cursor: pointer;
+
+}
+
+.Navbar-Menu li:hover {
+    color: #00AAC3;
+}
+
+.Navbar-Logo img {
+    margin-left: 10px;
+    width: 130px;
+    height: auto;
+    cursor: pointer;
+}
+
+.Navbar-btn {
+    font-size: 15px;
+    border: 0;
+    background-color: #a6c0d9;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+    height: fit-content;
+
+}
+
+.Navbar-btn:hover {
+    background-image: linear-gradient(to right,
+            #E7484F,
+            #E7484F 16.65%,
+            #F68B1D 16.65%,
+            #F68B1D 33.3%,
+            #FCED00 33.3%,
+            #FCED00 49.95%,
+            #009E4F 49.95%,
+            #009E4F 66.6%,
+            #00AAC3 66.6%,
+            #00AAC3 83.25%,
+            #732982 83.25%,
+            #732982 100%,
+            #E7484F 100%);
+    animation: slidebg 5s linear infinite;
+}
+
+.Navbar-MenuIcon {
+    display: none;
+}
+
+.Navbar-Menu-2 {
+    z-index: -1;
+    padding: 0 30%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #F7FBFE;
+    width: 100%;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+    transition: 0.5s;
+
+}
+
+.Navbar-Menu-2 li {
+    list-style: none;
+    border: 0;
+    padding: 5px;
+}
+
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .Navbar-Menu {
+        display: none
+    }
+
+
+
+    .Navbar-MenuIcon {
+        display: block;
+        cursor: pointer;
+    }
+
+}

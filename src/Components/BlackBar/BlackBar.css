@@ -1,0 +1,32 @@
+.BlackBar {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    padding: 30px;
+}
+
+.BlackBar h1 {
+    max-width: 900px;
+    line-height: 53px;
+    font-weight: 400;
+    font-size: 2.25rem;
+    font-family: 'Playfair Display', serif !important;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.BlackBar i{
+    padding: 10px;
+    color: white;
+    font-size:x-large;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    .BlackBar h1 {
+        font-size: 1.75rem;
+    }
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.BlackCat {
+    background-image: url('./Capture3.PNG');
+    background-position: 50% 50%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 15%;
+}
+
+.BlackCat h1 {
+    color: white;
+    padding-top: 100px;
+    max-width: 300px;
+    font-family: 'Playfair Display', serif !important;
+}
+
+.BlackCat h4 {
+    padding-top: 50px;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
